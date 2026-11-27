@@ -1,0 +1,5 @@
+# Interview slides: kept locally, never pushed
+slides/
+.Rhistory
+.RData
+.Rproj.user/

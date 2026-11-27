@@ -1,0 +1,13 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Heritage visitor survey: a jamovi demo",
+  "description": "A simulated visitor survey on comfort, climate perception and the acceptability of conservation measures at heritage sites, with a mock test in jamovi and the same analyses in R with jmv.",
+  "author": [{ "@type": "Person", "givenName": "Linda", "familyName": "Angulo Lopez" }],
+  "license": "https://spdx.org/licenses/MIT",
+  "version": "1.0.0",
+  "codeRepository": "https://github.com/lindangulopez/heritage-survey-jamovi-demo",
+  "programmingLanguage": ["R"],
+  "softwareRequirements": ["jmv"],
+  "dateCreated": "2026-11-27"
+}
