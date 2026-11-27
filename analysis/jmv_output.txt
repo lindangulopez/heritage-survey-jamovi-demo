@@ -5,20 +5,20 @@
  ─────────────────────────────────────────────────── 
                          season    thermal_comfort   
  ─────────────────────────────────────────────────── 
-   N                     Ete                   111   
-                         Hiver                 129   
-   Missing               Ete                     0   
-                         Hiver                   0   
-   Mean                  Ete                 3.676   
-                         Hiver               4.667   
-   Median                Ete                     4   
-                         Hiver                   5   
-   Standard deviation    Ete                0.8220   
-                         Hiver              0.5907   
-   Minimum               Ete                     1   
-                         Hiver                   3   
-   Maximum               Ete                     5   
-                         Hiver                   5   
+   N                     Summer                111   
+                         Winter                129   
+   Missing               Summer                  0   
+                         Winter                  0   
+   Mean                  Summer              3.676   
+                         Winter              4.667   
+   Median                Summer                  4   
+                         Winter                  5   
+   Standard deviation    Summer             0.8220   
+                         Winter             0.5907   
+   Minimum               Summer                  1   
+                         Winter                  3   
+   Maximum               Summer                  5   
+                         Winter                  5   
  ─────────────────────────────────────────────────── 
 
 
@@ -53,40 +53,40 @@
                       Welch's t          -10.57      196.2    < .001    Cohen's d                         -1.385   
                       Mann-Whitney U       2616               < .001    Rank biserial correlation         0.6347   
  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
-   Note. Hₐ μ <sub>Ete</sub> ≠ μ <sub>Hiver</sub>
+   Note. Hₐ μ <sub>Summer</sub> ≠ μ <sub>Winter</sub>
    ᵃ Levene's test is significant (p < .05), suggesting a violation of the assumption of equal variances
 
 
- Group Descriptives                                                          
- ─────────────────────────────────────────────────────────────────────────── 
-                      Group    N      Mean     Median    SD        SE        
- ─────────────────────────────────────────────────────────────────────────── 
-   thermal_comfort    Ete      111    3.676     4.000    0.8220    0.07802   
-                      Hiver    129    4.667     5.000    0.5907    0.05201   
- ─────────────────────────────────────────────────────────────────────────── 
+ Group Descriptives                                                           
+ ──────────────────────────────────────────────────────────────────────────── 
+                      Group     N      Mean     Median    SD        SE        
+ ──────────────────────────────────────────────────────────────────────────── 
+   thermal_comfort    Summer    111    3.676     4.000    0.8220    0.07802   
+                      Winter    129    4.667     5.000    0.5907    0.05201   
+ ──────────────────────────────────────────────────────────────────────────── 
 
 
  CONTINGENCY TABLES
 
- Contingency Tables                                                
- ───────────────────────────────────────────────────────────────── 
-   country                        Non        Oui        Total      
- ───────────────────────────────────────────────────────────────── 
-   Belgique       Observed             22         38          60   
-                  % within row    36.67 %    63.33 %    100.00 %   
-                                                                   
-   France         Observed             32         28          60   
-                  % within row    53.33 %    46.67 %    100.00 %   
-                                                                   
-   Italie         Observed             38         22          60   
-                  % within row    63.33 %    36.67 %    100.00 %   
-                                                                   
-   Royaume-Uni    Observed             26         34          60   
-                  % within row    43.33 %    56.67 %    100.00 %   
-                                                                   
-   Total          Observed            118        122         240   
-                  % within row    49.17 %    50.83 %    100.00 %   
- ───────────────────────────────────────────────────────────────── 
+ Contingency Tables                                                   
+ ──────────────────────────────────────────────────────────────────── 
+   country                           No         Yes        Total      
+ ──────────────────────────────────────────────────────────────────── 
+   Belgium           Observed             22         38          60   
+                     % within row    36.67 %    63.33 %    100.00 %   
+                                                                      
+   France            Observed             32         28          60   
+                     % within row    53.33 %    46.67 %    100.00 %   
+                                                                      
+   Italy             Observed             38         22          60   
+                     % within row    63.33 %    36.67 %    100.00 %   
+                                                                      
+   United Kingdom    Observed             26         34          60   
+                     % within row    43.33 %    56.67 %    100.00 %   
+                                                                      
+   Total             Observed            118        122         240   
+                     % within row    49.17 %    50.83 %    100.00 %   
+ ──────────────────────────────────────────────────────────────────── 
 
 
  χ² Tests                      
@@ -118,35 +118,35 @@
  ────────────────────────────────────────────────────────── 
 
 
- Group Descriptives                                              
- ─────────────────────────────────────────────────────────────── 
-                country        N     Mean     SD        SE       
- ─────────────────────────────────────────────────────────────── 
-   acc_score    Belgique       60    3.446    0.9434    0.1218   
-                France         60    3.129    0.8291    0.1070   
-                Italie         60    2.842    0.9228    0.1191   
-                Royaume-Uni    60    3.000    0.9263    0.1196   
- ─────────────────────────────────────────────────────────────── 
+ Group Descriptives                                                 
+ ────────────────────────────────────────────────────────────────── 
+                country           N     Mean     SD        SE       
+ ────────────────────────────────────────────────────────────────── 
+   acc_score    Belgium           60    3.446    0.9434    0.1218   
+                France            60    3.129    0.8291    0.1070   
+                Italy             60    2.842    0.9228    0.1191   
+                United Kingdom    60    3.000    0.9263    0.1196   
+ ────────────────────────────────────────────────────────────────── 
 
 
  POST HOC TESTS
 
- Tukey Post-Hoc Test – acc_score                                                   
- ───────────────────────────────────────────────────────────────────────────────── 
-                                     Belgique    France    Italie    Royaume-Uni   
- ───────────────────────────────────────────────────────────────────────────────── 
-   Belgique       Mean difference           —    0.3167    0.6042         0.4458   
-                  p-value                   —      .225      .002           .038   
-                                                                                   
-   France         Mean difference                     —    0.2875         0.1292   
-                  p-value                             —      .307           .863   
-                                                                                   
-   Italie         Mean difference                               —        -0.1583   
-                  p-value                                       —           .774   
-                                                                                   
-   Royaume-Uni    Mean difference                                              —   
-                  p-value                                                      —   
- ───────────────────────────────────────────────────────────────────────────────── 
+ Tukey Post-Hoc Test – acc_score                                                        
+ ────────────────────────────────────────────────────────────────────────────────────── 
+                                        Belgium    France    Italy     United Kingdom   
+ ────────────────────────────────────────────────────────────────────────────────────── 
+   Belgium           Mean difference          —    0.3167    0.6042            0.4458   
+                     p-value                  —      .225      .002              .038   
+                                                                                        
+   France            Mean difference                    —    0.2875            0.1292   
+                     p-value                            —      .307              .863   
+                                                                                        
+   Italy             Mean difference                              —           -0.1583   
+                     p-value                                      —              .774   
+                                                                                        
+   United Kingdom    Mean difference                                                —   
+                     p-value                                                        —   
+ ────────────────────────────────────────────────────────────────────────────────────── 
 
 
  CORRELATION MATRIX
@@ -201,18 +201,18 @@
 
  MODEL 1
 
- Model Coefficients - acc_score                                                            
- ───────────────────────────────────────────────────────────────────────────────────────── 
-   Predictor                 Estimate    SE         t          p         Stand. Estimate   
- ───────────────────────────────────────────────────────────────────────────────────────── 
-   Intercept            ᵃ     1.22926    0.31088     3.9541    < .001                      
-   climate_concern            0.51246    0.04600    11.1415    < .001            0.57824   
-   thermal_comfort            0.01665    0.05552     0.2998      .765            0.01546   
-   country:                                                                                
-   Belgique – France          0.40430    0.13479     2.9994      .003            0.43572   
-   Italie – France           -0.10425    0.13599    -0.7666      .444           -0.11236   
-   Royaume-Uni – France       0.06950    0.13574     0.5120      .609            0.07490   
- ───────────────────────────────────────────────────────────────────────────────────────── 
+ Model Coefficients - acc_score                                                               
+ ──────────────────────────────────────────────────────────────────────────────────────────── 
+   Predictor                    Estimate    SE         t          p         Stand. Estimate   
+ ──────────────────────────────────────────────────────────────────────────────────────────── 
+   Intercept               ᵃ     1.22926    0.31088     3.9541    < .001                      
+   climate_concern               0.51246    0.04600    11.1415    < .001            0.57824   
+   thermal_comfort               0.01665    0.05552     0.2998      .765            0.01546   
+   country:                                                                                   
+   Belgium – France              0.40430    0.13479     2.9994      .003            0.43572   
+   Italy – France               -0.10425    0.13599    -0.7666      .444           -0.11236   
+   United Kingdom – France       0.06950    0.13574     0.5120      .609            0.07490   
+ ──────────────────────────────────────────────────────────────────────────────────────────── 
    ᵃ Represents reference level
 
 
@@ -239,6 +239,6 @@
    Intercept           -1.5900    0.4635    -3.431    < .001        0.2039   
    climate_concern      0.4861    0.1329     3.657    < .001        1.6259   
  ─────────────────────────────────────────────────────────────────────────── 
-   Note. Estimates represent the log odds of "accept_intervention = Oui"
-   vs. "accept_intervention = Non"
+   Note. Estimates represent the log odds of "accept_intervention = Yes"
+   vs. "accept_intervention = No"
 

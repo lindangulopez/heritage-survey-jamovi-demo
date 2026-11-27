@@ -46,5 +46,5 @@ linReg(d, dep = "acc_score", covs = c("climate_concern", "thermal_comfort"),
 # 9. Regression > 2 Outcomes Binomial: accept_intervention ~ climate_concern
 logRegBin(d, dep = "accept_intervention", covs = "climate_concern",
           blocks = list(list("climate_concern")),
-          refLevels = list(list(var = "accept_intervention", ref = "Non")),
+          refLevels = list(list(var = "accept_intervention", ref = "No")),
           OR = TRUE, pseudoR2 = c("r2mf", "r2n"))

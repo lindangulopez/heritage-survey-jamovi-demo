@@ -12,9 +12,9 @@ Numbers from `Rscript analysis/jmv_analysis.R` (jmv 2.8.0, R 4.6.1), the same ta
 
 **Q4.** Levene's test is significant (variances differ), so report Welch's t: t(196.2) = -10.57, p < .001, Cohen's d = -1.39, a large effect. Mann-Whitney agrees (U = 2616, p < .001, rank-biserial r = 0.63).
 
-**Q5.** Acceptance (Oui): Belgique 63.3 %, Royaume-Uni 56.7 %, France 46.7 %, Italie 36.7 %. χ²(3) = 9.80, p = .020: acceptance differs by country. Cramér's V = 0.20, a weak to moderate link. (Phi is only defined for 2 × 2 tables, hence NaN here.)
+**Q5.** Acceptance (Yes): Belgium 63.3 %, United Kingdom 56.7 %, France 46.7 %, Italy 36.7 %. χ²(3) = 9.80, p = .020: acceptance differs by country. Cramér's V = 0.20, a weak to moderate link. (Phi is only defined for 2 × 2 tables, hence NaN here.)
 
-**Q6.** Welch's F(3, 130.9) = 4.47, p = .005 (Fisher's F(3, 236) = 4.80, p = .003). Means: Belgique 3.45, France 3.13, Royaume-Uni 3.00, Italie 2.84. Tukey: Belgique > Italie (difference 0.60, p = .002) and Belgique > Royaume-Uni (0.45, p = .038); no other pair differs.
+**Q6.** Welch's F(3, 130.9) = 4.47, p = .005 (Fisher's F(3, 236) = 4.80, p = .003). Means: Belgium 3.45, France 3.13, United Kingdom 3.00, Italy 2.84. Tukey: Belgium > Italy (difference 0.60, p = .002) and Belgium > United Kingdom (0.45, p = .038); no other pair differs.
 
 **Q7.** `climate_concern` and `acc_score`: r = 0.58, ρ = 0.58, p < .001, a strong positive link. `temp_c` and `thermal_comfort`: r = -0.60, p < .001 (hotter, less comfortable). Comfort is not linked to acceptability (r = 0.00, p = .95).
 
@@ -22,4 +22,4 @@ Numbers from `Rscript analysis/jmv_analysis.R` (jmv 2.8.0, R 4.6.1), the same ta
 
 **Q9.** Odds ratio 1.63 (p < .001): each extra point of climate concern multiplies the odds of saying yes to interventions by about 1.6. The model explains little on its own (McFadden R² = 0.04, Nagelkerke R² = 0.08): concern matters, but many other things shape a yes or no.
 
-**Q10.** One possible panel text: « En été, les visiteurs ont nettement plus chaud et se sentent moins à l'aise qu'en hiver. Plus on pense que le climat menace un monument, plus on accepte des mesures pour le protéger, même une fermeture partielle ou un billet plus cher. Les visiteurs belges sont les plus ouverts à ces mesures, les visiteurs italiens les plus réservés. »
+**Q10.** One possible panel text: "In summer, visitors feel the heat and are much less comfortable than in winter. The more people believe the climate threatens a monument, the more they accept measures to protect it, even a partial closure or a dearer ticket. Belgian visitors are the most open to these measures, Italian visitors the most reluctant."

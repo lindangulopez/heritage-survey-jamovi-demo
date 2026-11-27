@@ -1,26 +1,26 @@
 # Mock test: a heritage visitor survey in jamovi
 
-About 60 minutes. Open `data/visitor_survey_simulated.csv` in jamovi (☰ > Open > Browse) and answer each question from the jamovi output. Menu paths are for jamovi 2.x in English; jamovi also has a French interface (⋮ application menu, top right > Language).
+About 60 minutes. Open `data/visitor_survey_simulated.csv` in jamovi (☰ > Open > Browse) and answer each question from the jamovi output. Menu paths are for jamovi 2.x in English; the interface language is in the ⋮ application menu (top right).
 
 The answers are in [SOLUTIONS.md](SOLUTIONS.md). The same analyses in R, with the package jamovi runs underneath, are in [analysis/jmv_analysis.R](analysis/jmv_analysis.R).
 
 ## The survey (simulated)
 
-240 visitors, 60 in each of four countries (France, Royaume-Uni, Italie, Belgique), at museums and outdoor monuments, in summer (Ete) and winter (Hiver).
+240 visitors, 60 in each of four countries (France, United Kingdom, Italy, Belgium), at museums and outdoor monuments, in summer and winter.
 
 | Variable | Question or meaning | Scale |
 |---|---|---|
-| `country`, `site_type`, `season`, `first_visit` | Country, museum or outdoor monument, season of the visit, first visit (Oui / Non) | nominal |
+| `country`, `site_type`, `season`, `first_visit` | Country, museum or outdoor monument, season of the visit, first visit (Yes / No) | nominal |
 | `age_group` | 18-29, 30-44, 45-64, 65+ | ordinal |
 | `temp_c` | Temperature at the time of the visit, °C | continuous |
-| `thermal_comfort` | « Comment jugez-vous la température pendant votre visite ? » 1 = très inconfortable … 5 = très confortable | Likert 1-5 |
-| `humidity_comfort` | « Et l'humidité ? » same scale | Likert 1-5 |
-| `climate_concern` | « Le changement climatique menace ce patrimoine. » 1 = pas du tout d'accord … 5 = tout à fait d'accord | Likert 1-5 |
+| `thermal_comfort` | "How comfortable was the temperature during your visit?" 1 = very uncomfortable … 5 = very comfortable | Likert 1-5 |
+| `humidity_comfort` | "And the humidity?" same scale | Likert 1-5 |
+| `climate_concern` | "Climate change threatens this heritage site." 1 = strongly disagree … 5 = strongly agree | Likert 1-5 |
 | `acc_closure` | Acceptability: partial closure during heatwaves | Likert 1-5 |
 | `acc_ac` | Acceptability: air conditioning in the rooms | Likert 1-5 |
 | `acc_replica` | Acceptability: a replica shown instead of the original | Likert 1-5 |
 | `acc_ticket` | Acceptability: a higher ticket price to fund conservation | Likert 1-5 |
-| `accept_intervention` | « Accepteriez-vous des interventions pour protéger ce site ? » | Oui / Non |
+| `accept_intervention` | "Would you accept interventions to protect this site?" | Yes / No |
 
 ## Questions
 
@@ -42,7 +42,7 @@ The answers are in [SOLUTIONS.md](SOLUTIONS.md). The same analyses in R, with th
 
 **Q8. Explain the score.** Regression > Linear Regression: dependent `acc_score`; covariates `climate_concern`, `thermal_comfort`; factor `country` with France as the reference level; tick adjusted R² and standardised estimates. What predicts acceptability, holding the others constant?
 
-**Q9. A yes/no outcome.** Regression > 2 Outcomes (Binomial): dependent `accept_intervention`, reference level Non; covariate `climate_concern`; tick odds ratios, McFadden's and Nagelkerke's R². Interpret the odds ratio in one sentence.
+**Q9. A yes/no outcome.** Regression > 2 Outcomes (Binomial): dependent `accept_intervention`, reference level No; covariate `climate_concern`; tick odds ratios, McFadden's and Nagelkerke's R². Interpret the odds ratio in one sentence.
 
 **Q10. Say it to the public.** Write three plain sentences for an exhibition panel from Q2, Q6 and Q8, with no statistical vocabulary.
 
